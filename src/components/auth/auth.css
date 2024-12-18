@@ -1,0 +1,96 @@
+.auth{
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+ 
+      position: fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      height:100vh;
+      background-image: url('../../assets/ninefive-dash-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   
+}
+
+.sign-in{
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    height:280px;
+    background-color: rgba(33, 33, 33, 0.74);
+    padding:0rem 1rem 1rem 1rem;
+    position: relative;
+    text-align: left;
+}
+
+/*  .auth-title{
+    position: absolute;
+
+    top:0;
+    left:0;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+} */
+
+.signin-cta{
+    margin-bottom: 1rem;
+  margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.sign-in input{
+    margin-bottom: 1rem;
+    padding:0.5rem 1rem;
+    outline:none;
+    border:none;
+    width:100%;
+   
+}
+
+.sign-in button{
+
+ 
+    background-color: white;
+    color:black;
+    border:none;
+    outline:none;
+    width:100%;
+    padding:0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.sign-in button:hover{
+
+    background-color: black;
+    cursor: pointer;
+    color:white;
+   outline:1px solid white;
+}
+
+
+@media(max-width:400px){
+ 
+
+     .auth{
+        margin: 1rem;
+        text-align: center;
+     }
+     .sign-in{
+        text-align: center;
+     }
+}

@@ -1,0 +1,87 @@
+.candidates-list{
+    
+
+    margin-bottom: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+ 
+}
+
+
+.candidate-info{
+
+ background-color: white;
+ color:black;
+ padding:1rem;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+
+.candidate-info:hover{
+  
+
+
+  transition: .2s ease;
+}
+
+.candidate-names{
+
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.candidate-email, .candidate-phone{
+    font-size: 0.9rem;
+}
+
+.download-resume{
+    border:none;
+    outline:none;
+    background-color: black;
+    color:white;
+    padding:0.5rem 1rem;
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+    cursor: pointer;
+}
+
+.download-resume:hover{
+
+   
+  transform: scale(1.05);
+  transition: .2s ease-in-out;
+}
+
+.candidate-industry-section{
+text-align: center;
+
+}
+
+.candidate-experience{
+  font-weight: bolder;
+}
+
+
+
+@media(max-width:500px){
+
+   
+  
+  .candidate-info{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   gap:0.5rem;
+   
+  }
+
+}
+
+

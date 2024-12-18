@@ -1,0 +1,144 @@
+.candidates-filter{
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.filter-container{
+
+   border: 1px solid white;
+    height:100px;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter-container input, option, select{
+
+    padding:0.5rem 2rem;
+    width:50ch;
+    outline:none;
+ 
+    border:1px solid white;
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+
+.filter-container option{
+    color:black;
+}
+.filter-container input::placeholder{
+
+    color:white;
+}
+
+.searchby-names, .searchby-industry{
+
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.search-icon{
+
+    position: absolute;
+    left:1rem;
+
+}
+
+
+/* RESPONSIVE STYLES */
+
+
+@media(max-width:1165px){
+    .filter-container input, option, select{
+
+        width:40ch;
+    }
+
+}
+
+@media(max-width:955px){
+    .filter-container input, option, select{
+
+        width:35ch;
+    }
+
+}
+@media(max-width:845px){
+    .filter-container input, option, select{
+
+        width:30ch;
+    }
+
+}
+@media(max-width:726px){
+
+    .filter-container{
+
+        padding:0.2rem 1rem;
+    }
+    .filter-container input, option, select{
+
+        width:25ch;
+    }
+
+}
+@media(max-width:645px){
+
+  .filter-container{
+    display:flex;
+    flex-direction: column;
+
+    padding:1rem 2rem;
+    height:160px;
+  }
+
+  .filter-container input, option, select{
+  
+    width:60ch;
+  }
+
+}
+
+
+@media(max-width:500px){
+
+   
+  
+    .filter-container input, option, select{
+    
+      width:53ch;
+    }
+  
+  }
+
+  @media(max-width:445px){
+
+   
+  
+    .filter-container input, option, select{
+    
+      width:40ch;
+    }
+  
+  }
+
+  @media(max-width:350px){
+  
+    .filter-container input, option, select{
+    
+        width:35ch;
+      }
+
+  }
+  @media(max-width:310px){
+  
+    .filter-container input, option, select{
+    
+        width:32ch;
+      }
+
+  }

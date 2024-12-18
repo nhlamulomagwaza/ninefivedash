@@ -1,0 +1,39 @@
+.react-quill .ql-toolbar.ql-snow {
+    background-color: white;
+  }
+
+  .react-quill{
+    height: 200px;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-picker-label {
+    color: black;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-picker-item {
+    color: black;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-stroke {
+    stroke: black;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-fill {
+    fill: black;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    color: white;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+    background-color: white;
+    color: black;
+  }
+  
+  .react-quill .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-item.ql-selected {
+    color: white;
+    background-color: black;
+  }
+
+  

@@ -1,0 +1,30 @@
+
+
+.title{
+    font-family: 'Orbitron', monospace;
+    font-weight: 300;
+}
+
+span{
+    font-weight: bold;
+}
+
+
+
+
+@media(max-width:395px){
+
+
+    .title{
+        text-align: center;
+    }
+}
+
+@media(max-width:306px){
+
+
+    .title{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}

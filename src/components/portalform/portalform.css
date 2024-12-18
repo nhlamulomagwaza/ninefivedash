@@ -1,0 +1,76 @@
+.portal-form{
+    margin-top: 3rem;
+    color:white;
+}
+
+.portal-form input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 0.4rem;
+    color: white;
+    padding:0.5rem 1rem;
+    }
+
+    .portal-form input::placeholder{
+
+        color:white;
+    }
+
+    .portal-form .remote-onsite{
+
+        width:100%;
+        margin-bottom: 0.4rem;
+        text-align: right;
+        padding:0.5rem 0.8rem;
+    }
+
+    .remote-onsite option{
+
+        color:black;
+        text-align: left;
+      
+    }
+
+
+    .portal-btn{
+
+        margin-top: 5rem;
+        background-color: white;
+        color:black;
+        border:none;
+        outline:none;
+        width:100%;
+        padding:0.5rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+    
+    .portal-btn2{
+
+        margin-top: 5rem;
+        background-color: white;
+        color:black;
+        border:none;
+        outline:none;
+        width:100%;
+        padding:0.5rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+    }
+
+    .portal-btn:hover{
+        background-color: black;
+        cursor: pointer;
+        color:white;
+       outline:1px solid lime;
+       transition: .2s ease;
+    }

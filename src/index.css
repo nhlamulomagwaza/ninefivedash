@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*::after, *::before, *{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+html{
+
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+
+  background-color: black;
+  color:white;
+  padding:4rem;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", system-ui;
+}
+
+.log-out{
+  position: fixed;
+  bottom: 2rem;
+right:4rem;
+
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  padding:0.5rem;
+ width: 40px;
+ height:40px;
+ border: 1px dashed black;
+ z-index: 999999;
+}
+
+.log-out:hover{
+
+  color:white;
+  background-color: black;
+  border:1px dashed white;
+  transition: .2s ease-in-out;
+}
+
+/* RESPONSIVE STYLES */
+
+
+@media(max-width:1300px){
+
+  body{
+
+    padding:2rem;
+  }
+
+
+  .log-out{
+    position: fixed;
+    bottom: 2rem;
+  right:2rem;
+  
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    padding:0.5rem;
+   width: 40px;
+   height:40px;
+   border: 1px dashed black;
+   z-index: 999999;
+  }
+}
+@media(max-width:1200px){
+
+  body{
+
+    padding:1rem;
+  }
+  .log-out{
+    position: fixed;
+    bottom: 2rem;
+  right:1rem;
+  
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    padding:0.5rem;
+   width: 40px;
+   height:40px;
+   border: 1px dashed black;
+   z-index: 999999;
+  }
+}
