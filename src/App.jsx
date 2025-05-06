@@ -4,7 +4,7 @@ import Candidates from './Pages/Candidates';
 import Portal from './Pages/Portal';
 import Applications from './Pages/Applications';
 import Applicants from './components/applications/Applicants';
-import Header from './components/Header/Header';
+import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
 import { Toaster } from 'react-hot-toast';
 import Auth from './components/auth/Auth';
