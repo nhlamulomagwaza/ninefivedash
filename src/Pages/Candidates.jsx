@@ -39,7 +39,7 @@ const Candidates = () => {
         </div>
       ) : (
         candidates && candidates.length === 0 ? (
-          <div className='no-candidates'>No candidates yet</div>
+          <div className='search-not-found'>No candidates yet...</div>
         ) : (
           filteredCandidates.length === 0 && (searchCandidateByNames !== '' || searchCandidateByIndustry !== '' || searchCandidateByExperience !== '') ? (
             <div className='search-not-found'>{getNoMatchesMessage()}</div>
