@@ -32,22 +32,26 @@ const Candidates = () => {
   return (
     <section className="candidates">
       <Filter />
-
+  
       {loadingCandidates ? (
         <div className='api-loader'>
           <MoonLoader color='white' size={50} />
         </div>
       ) : (
-        filteredCandidates.length === 0 && (searchCandidateByNames !== '' || searchCandidateByIndustry !== '' || searchCandidateByExperience !== '') ? (
-          <div className='search-not-found'>{getNoMatchesMessage()}</div>
+        candidates && candidates.length === 0 ? (
+          <div className='no-candidates'>No candidates yet</div>
         ) : (
-          candidates && filteredCandidates.map((candidate) => (
-            <Candidateslist key={candidate._id} candidate={candidate} />
-          ))
+          filteredCandidates.length === 0 && (searchCandidateByNames !== '' || searchCandidateByIndustry !== '' || searchCandidateByExperience !== '') ? (
+            <div className='search-not-found'>{getNoMatchesMessage()}</div>
+          ) : (
+            candidates && filteredCandidates.map((candidate) => (
+              <Candidateslist key={candidate._id} candidate={candidate} />
+            ))
+          )
         )
       )}
     </section>
-  )
+  );
 }
 
 export default Candidates
