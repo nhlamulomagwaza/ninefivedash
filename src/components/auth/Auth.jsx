@@ -11,7 +11,10 @@ const Auth = () => {
    const [emailValidateErrors, setEmailValidateErrors] = useState(false);
   const [passwordValidateErrors, setPasswordValidateErrors] = useState(false);
  const [loading, setLoading]= useState(false);
+ const [isHovered, setIsHovered] = useState(false); // State to track hover
 
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
 
 
 
@@ -192,7 +195,11 @@ const Auth = () => {
       style={passwordValidateErrors ? { backgroundColor: '#ffaea8', border: '1px solid #ff2626' } : { backgroundColor: 'white' }}
 
       />
-      <button className="sign-btn">{loading ? <ScaleLoader className='loader' color='white' height={10} /> : 'Sign In'}</button>
+      <button className="sign-btn"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+
+      >{loading ? <ScaleLoader className='loader'         color={isHovered ? 'white' : 'black'}  height={10} /> : 'Sign In'}</button>
       <div className="demo-logins">
         <p className="demo-login">Demo Login</p>
         <div className="demo-credentials">

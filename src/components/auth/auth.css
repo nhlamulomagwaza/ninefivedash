@@ -74,7 +74,8 @@
     font-size: 1rem;
 }
 
-.sign-in button:hover{
+.sign-in button:hover {
+    
 
     background-color: black;
     cursor: pointer;
@@ -82,7 +83,14 @@
    outline:1px solid white;
 }
 
-
+/* Loader color change based on hover */
+.sign-btn:hover .loader {
+    color: white !important; /* Loader color when hovered */
+  }
+  
+  .loader {
+    color: black !important; /* Default loader color */
+  }
 .demo-logins{
     margin-top: 2rem;
     font-weight: 300;
